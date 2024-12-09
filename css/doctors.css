@@ -1,0 +1,44 @@
+body {
+    background-color: lightblue;
+    margin: auto;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.logo {
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px auto 50px;
+}
+
+.doctors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.doctors img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+.doctor1, .doctor2 {
+    text-align: center;
+}

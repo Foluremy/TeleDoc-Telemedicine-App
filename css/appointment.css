@@ -1,0 +1,48 @@
+body {
+    background-color: whitesmoke;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.logo {
+    font-size: 25px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.appointment {
+    background-color: lightblue;
+    text-align: center;
+    width: 80%;
+    height: 100%;
+    margin: 25px auto;
+    padding: 60px;
+    border-radius: 15%;
+}
+
+.appointment h1 {
+    padding-bottom: 30px;
+}
+
+.appointment button {
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.appointment button:hover {
+    font-size: 18px;
+}

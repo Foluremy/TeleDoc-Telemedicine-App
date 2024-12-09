@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body { 
+    background-color: lightblue;
+    margin-left: 30%;
+}
+
+.nav {
+    background-color: darkgray;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    border-radius: 50%;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.logo {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    list-style: none;
+    display: flex;
+}
+
+.container-item {
+    margin: 0 25px;
+}
+
+.container-item:hover {
+    font-style: italic;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.content {
+    padding-top: 50px;
+}
+
+.heading {
+    background-color: rgba(169, 169, 169, 0.5);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+.heading h1 {
+    font-size: 35px;
+}
+
+
+.middle-content {
+    background-color: rgba(169, 169, 169, 0.5);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p, li{
+    font-size: 20px;
+}
+
+.middle-content ul li {
+    text-align: left;
+}
+
+.call-to-action {
+    background-color: rgba(169, 169, 169, 0.5);
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    width: 50%;
+}
+
+.call-to-action p a {
+    background-color: rgb(17, 180, 245);
+    color: black;
+    padding: 15px;
+    margin: 30px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.call-to-action p a:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+.sidebar {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 29%;
+    height: 100vh;
+    background-color: gray;
+    padding: 20px;
+  }
+
+.sidebar h3 {
+    background-color: lightblue;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 22px;
+}
+
+.sidebar p, a {
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    color: lightgray;
+    font-size: 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    background-color: darkgray;
+    width: 100%;
+    height: 200px;
+    padding-top: 10px;
+}
+
+footer .terms:hover {
+    font-style: italic;
+    color: aquamarine;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li a:hover {
+    color: aquamarine;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: end;
+        margin-right: 10px;
+    }
+
+    .container {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 0 30%;
+        padding: 5px 50px;
+        background-color: rgba(211, 211, 211, 0.8);
+        width: 50%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-item {
+        margin: 20px 0;
+    }
+
+    .menu-toggle:checked + .hamburger +  .container {
+        display: flex;
+    }
+
+    .sidebar {
+        display: block; 
+        position: static; 
+        width: 100%; 
+        margin-bottom: 20px; 
+        background-color: darkgray;
+        padding-bottom: 5px;
+  }
+      
+    body {
+        margin: 10px;
+    }
+
+    .heading h1 {
+        font-size: 30px;
+    }
+
+    .heading h2 {
+        font-size: 22px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+    
+    p, li{
+        font-size: 17px;
+    }
+
+    .call-to-action {
+        padding: 5px 10px;
+        border-radius: 10px;
+        margin: 50px auto;
+        width: 80%;
+    }
+    
+    .call-to-action p {
+        padding: 5px;
+        margin: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
